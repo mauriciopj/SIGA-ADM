@@ -34,7 +34,7 @@
                     ['label' => 'Página Inicial', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Eventos', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'AACC', 'url' => ['/aacc']],
-                    //['label' => 'TCC', 'url' => ['/tcc']],
+                    ['label' => 'TCC', 'url' => ['/tcc']],
                     ['label' => 'Certificados', 'url' => ['/certificado']],
                     ['label' => 'Informativos', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
