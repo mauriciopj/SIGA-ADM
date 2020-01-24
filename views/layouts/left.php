@@ -9,7 +9,7 @@
             </div>
             <div class="pull-left info">
                 <p>Francisco Farley</p>
-                <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
 
@@ -29,23 +29,22 @@
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
-                    ['label' => 'Menu Principal', 'options' => ['class' => 'header']],
-                    //['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
-                    ['label' => 'Página Inicial', 'icon' => 'file-code-o', 'url' => ['/gii']],
-                    ['label' => 'Eventos', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'AACC', 'url' => ['/aacc']],
-                    ['label' => 'TCC', 'url' => ['/tcc']],
-                    ['label' => 'Certificados', 'url' => ['/certificado']],
-                    ['label' => 'Informativos', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'MENU PRINCIPAL', 'options' => ['class' => 'header']],
+                    ['label' => 'Página Inicial', 'icon' => 'th', 'url' => ['/'], 'active' => Yii::$app->controller->id == 'site'],
+                    ['label' => 'Eventos', 'icon' => 'dashboard', 'url' => ['/eventos'], 'active' => Yii::$app->controller->id == 'eventos'],
+                    ['label' => 'AACC', 'icon' => 'circle-o', 'url' => ['/aacc'], 'active' => Yii::$app->controller->id == 'aacc'],
+                    ['label' => 'TCC', 'icon' => 'circle-o', 'url' => ['/tcc'], 'active' => Yii::$app->controller->id == 'tcc'],
+                    ['label' => 'Certificados', 'icon' => 'circle-o', 'url' => ['/certificado'], 'active' => Yii::$app->controller->id == 'certificado'],
+                    //['label' => 'Informativos', 'icon' => 'circle-o', 'url' => ['login'], 'active' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Regulamentos',
-                        'icon' => 'share',
+                        'icon' => '',
                         'url' => '#',
                         'items' => [
                             ['label' => 'PPP - Projeto Pedagógico', 'icon' => 'file-code-o', 'url' => ['/gii'],],
-                            ['label' => 'Regulmento AACC', 'icon' => 'dashboard', 'url' => ['/debug'],],
+                            ['label' => 'Regulamento AACC', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             [
-                                'label' => 'Regulmento Estágio',
+                                'label' => 'Regulamento Estágio',
                                 'icon' => 'circle-o',
                                 'url' => '#',
                                 'items' => [
@@ -61,6 +60,15 @@
                                     ],
                                 ],
                             ],
+                        ],
+                    ],
+                    [
+                        'label' => 'Yii2',
+                        'icon' => 'circle-o',
+                        'url' => '#',
+                        'items' => [
+                            ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
+                            ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                         ],
                     ],
                 ],

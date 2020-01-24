@@ -7,8 +7,8 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AaccSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title ='Atividades Acadêmicas Científicas Culturais';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title ="AACC";
+$this->params['breadcrumbs'][] = "AACC's";
 ?>
 <div class="aacc-index box box-primary">
 

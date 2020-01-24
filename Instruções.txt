@@ -1,0 +1,24 @@
+RESPOSITÓRIO NO GITHUB
+
+Clone o repositório:
+  => git clone https://github.com/mauriciopj/SIGA-ADM.git
+
+Substitua as seguintes pastas:
+  => vendor/
+
+Instale o tema AdminLTE2:
+  => composer require dmstr/yii2-adminlte-asset "2.*"
+
+NOVO PROJETO
+
+Instale o Yii2 Framework:
+  => composer create-project --prefer-dist yiisoft/yii2-app-basic yii2
+
+Instale o tema AdminLTE2:
+  => composer require dmstr/yii2-adminlte-asset "2.*"
+
+Substitua as seguintes pastas:
+  => config/
+  => controllers/
+  => models/
+  => views/
