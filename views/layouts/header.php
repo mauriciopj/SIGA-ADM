@@ -37,10 +37,10 @@ use yii\helpers\Html;
                                                  alt="User Image"/>
                                         </div>
                                         <h4>
-                                            Support Team
+                                            Equipe de Suporte
                                             <small><i class="fa fa-clock-o"></i> 5 mins</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>Por que não comprar um novo tema incrível?</p>
                                     </a>
                                 </li>
                                 <!-- end message -->
@@ -51,10 +51,10 @@ use yii\helpers\Html;
                                                  alt="user image"/>
                                         </div>
                                         <h4>
-                                            AdminLTE Design Team
-                                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            Equipe de Design AdminLTE
+                                            <small><i class="fa fa-clock-o"></i> 2 dias</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>Por que não comprar um novo tema incrível?</p>
                                     </a>
                                 </li>
                                 <li>
@@ -64,10 +64,10 @@ use yii\helpers\Html;
                                                  alt="user image"/>
                                         </div>
                                         <h4>
-                                            Developers
-                                            <small><i class="fa fa-clock-o"></i> Today</small>
+                                            Desenvolvedores
+                                            <small><i class="fa fa-clock-o"></i> Hoje</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>Por que não comprar um novo tema incrível?</p>
                                     </a>
                                 </li>
                                 <li>
@@ -77,10 +77,10 @@ use yii\helpers\Html;
                                                  alt="user image"/>
                                         </div>
                                         <h4>
-                                            Sales Department
-                                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                            Departamento de Vendas
+                                            <small><i class="fa fa-clock-o"></i> Ontem</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>Por que não comprar um novo tema incrível?</p>
                                     </a>
                                 </li>
                                 <li>
@@ -90,15 +90,15 @@ use yii\helpers\Html;
                                                  alt="user image"/>
                                         </div>
                                         <h4>
-                                            Reviewers
-                                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                            Revisores
+                                            <small><i class="fa fa-clock-o"></i> 2 dias</small>
                                         </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <p>Por que não comprar um novo tema incrível?</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="footer"><a href="#">See All Messages</a></li>
+                        <li class="footer"><a href="/chat">Ver todas as mensagens</a></li>
                     </ul>
                 </li>
                 <li class="dropdown notifications-menu">
