@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 14/12/2019 às 08:17
--- Versão do servidor: 5.7.27-0ubuntu0.18.04.1
--- Versão do PHP: 7.2.19-0ubuntu0.18.04.2
+-- Generation Time: 27-Jan-2020 às 11:17
+-- Versão do servidor: 5.7.28-0ubuntu0.18.04.4
+-- PHP Version: 7.2.24-0ubuntu0.18.04.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,14 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `yii2basic`
+-- Database: `siga_adm`
 --
 
-CREATE DATABASE yii2basic;
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `aacc`
+-- Estrutura da tabela `aacc`
 --
 
 CREATE TABLE `aacc` (
@@ -35,16 +34,16 @@ CREATE TABLE `aacc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Fazendo dump de dados para tabela `aacc`
+-- Extraindo dados da tabela `aacc`
 --
 
 INSERT INTO `aacc` (`id`, `titulo`, `descricao`, `tipo`) VALUES
-(1, 'CERTIFICADO - CONHECENDO O LATÉX (BATE PAPO TECNOLÓGICO)', 'Certificamos que Maurício Pereira de Jesus participou da palestra ministrada pelo professor Adriano Antunes Prates.', '2 horas');
+(1, 'CONHECENDO O LATÉX (BATE PAPO TECNOLÓGICO)', 'Certificamos que Maurício Pereira de Jesus participou da palestra ministrada pelo professor Adriano Antunes Prates.', '2 horas');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `certificados`
+-- Estrutura da tabela `certificados`
 --
 
 CREATE TABLE `certificados` (
@@ -53,36 +52,66 @@ CREATE TABLE `certificados` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Fazendo dump de dados para tabela `certificados`
+-- Extraindo dados da tabela `certificados`
 --
 
 INSERT INTO `certificados` (`id`, `tamanho`) VALUES
 (1, 4);
 
+-- --------------------------------------------------------
+
 --
--- Índices de tabelas apagadas
+-- Estrutura da tabela `tcc`
+--
+
+CREATE TABLE `tcc` (
+  `id` int(11) NOT NULL,
+  `tema` varchar(120) NOT NULL,
+  `titulo` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `tcc`
+--
+
+INSERT INTO `tcc` (`id`, `tema`, `titulo`) VALUES
+(1, 'Gestão de Atividades de Cursos Superiores', 'Sistema de Gestão de Atividades para o curso de Bacharelado em Administração');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `aacc`
+-- Indexes for table `aacc`
 --
 ALTER TABLE `aacc`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `certificados`
+-- Indexes for table `certificados`
 --
 ALTER TABLE `certificados`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- Indexes for table `tcc`
+--
+ALTER TABLE `tcc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `aacc`
+-- AUTO_INCREMENT for table `aacc`
 --
 ALTER TABLE `aacc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tcc`
+--
+ALTER TABLE `tcc`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
