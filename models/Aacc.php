@@ -28,7 +28,6 @@ class Aacc extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
             [['id'], 'integer'],
             [['titulo'], 'string', 'max' => 120],
             [['descricao'], 'string', 'max' => 200],

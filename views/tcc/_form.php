@@ -1,4 +1,4 @@
-tcc<?php
+<?php
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -8,20 +8,39 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="tcc-form">
+<div class="tcc-form box box-primary">
+  <!-- Main content -->
+  <?php $form = ActiveForm::begin(); ?>
+  <section class="content">
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box-header with-border">
+          <h3 class="box-title">Insira os dados do novo Trabalho de Conclusão de Curso:</h3>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form role="form">
+          <div class="box-body">
+            <div class="form-group">
 
-    <?php $form = ActiveForm::begin(); ?>
+              <!-- <?= $form->field($model, 'id')->textInput() ?>-->
 
-    <?= $form->field($model, 'id')->textInput() ?>
+              <?= $form->field($model, 'tema')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tema')->textInput(['maxlength' => true]) ?>
+              <?= $form->field($model, 'titulo')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'titulo')->textInput(['maxlength' => true]) ?>
-
-    <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+            </div>
+          </div>
+          <div class="box-footer">
+            <?= Html::submitButton('Salvar', ['class' => 'btn btn-success']) ?>
+            <?= Html::button('Cancelar', ['class' => 'btn btn-danger']) ?>
+          </div>
+        </form>
+      </div>
     </div>
-
-    <?php ActiveForm::end(); ?>
+  </section>
+  <?php ActiveForm::end(); ?>
 
 </div>

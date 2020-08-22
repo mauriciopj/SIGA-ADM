@@ -118,10 +118,10 @@ class AaccController extends Controller
      */
     protected function findModel($id)
     {
-        if (($model = Aacc::findOne($id)) !== null) {
-            return $model;
-        }
+      if (($model = Aacc::findOne($id)) !== null) {
+          return $model;
+      }
 
-        throw new NotFoundHttpException('The requested page does not exist.');
+      throw new NotFoundHttpException('The requested page does not exist.');
     }
 }

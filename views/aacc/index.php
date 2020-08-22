@@ -7,46 +7,46 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AaccSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title ="AACC";
+$this->title ="AACC - Atividades Acadêmicas Científico Culturais";
 $this->params['breadcrumbs'][] = "AACC's";
 ?>
 <div class="aacc-index box box-primary">
 
   <!--<h1><?// = Html::encode($this->title) ?></h1> -->
   <section class="content">
-      <p>
-          <?= Html::a('Nova Atividade', ['create'], ['class' => 'btn btn-success']) ?>
-      </p>
+    <p>
+      <?= Html::a('Adicionar uma nova Atividade (AACC)', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
 
-      <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="table-responsive">
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
 
-            <?= GridView::widget([
-                'dataProvider' => $dataProvider,
-                'filterModel' => $searchModel,
-                'columns' => [
-                    [
-                      'class' => 'yii\grid\SerialColumn',
-                    ],
+          <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => [
+              [
+                'class' => 'yii\grid\SerialColumn',
+              ],
 
-                    //'id',
-                    'titulo',
-                    'descricao',
-                    'tipo',
+              //'id',
+              'titulo',
+              'descricao',
+              'tipo',
 
-                    [
-                      'class' => 'yii\grid\ActionColumn',
-                      'header'=>'Ações',
-                      'headerOptions' => ['width' => '70'],
-                      'template' => '{view} {update} {delete}{link}',
-                    ],
-                ],
-            ]); ?>
-          </div>
+              [
+                'class' => 'yii\grid\ActionColumn',
+                'header'=>'Ações',
+                'headerOptions' => ['width' => '70'],
+                'template' => '{view} {update} {delete}{link}',
+              ],
+            ],
+          ]); ?>
         </div>
       </div>
+    </div>
   </section>
 
 </div>

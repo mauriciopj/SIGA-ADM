@@ -7,31 +7,42 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\CertificadoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title ='Certificados';
+$this->title ='Central de Gerenciamento de Certificados - (TODOS)';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="certificados-index">
+<div class="certificados-index box box-primary">
 
-    <!--<h1><?// = Html::encode($this->title) ?></h1> -->
-
+  <!--<h1><?// = Html::encode($this->title) ?></h1> -->
+  <section class="content">
     <p>
-        <?= Html::a('Novo Certificado', ['create'], ['class' => 'btn btn-success']) ?>
+      <?= Html::a('Adicionar um NOVO Certificado', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => [
+              ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
-            'tamanho',
+              //'id',
+              'tamanho',
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
-
+              [
+                'class' => 'yii\grid\ActionColumn',
+                'header'=>'Ações',
+                'headerOptions' => ['width' => '70'],
+                'template' => '{view} {update} {delete}{link}',
+              ],
+            ],
+          ]); ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
