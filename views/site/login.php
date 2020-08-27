@@ -44,10 +44,11 @@ $fieldOptions2 = [
 
         <div class="row">
             <div class="col-xs-7">
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                <!--<?= $form->field($model, 'rememberMe')->checkbox() ?>-->
+                <a href="#">Esqueci a minha senha</a>
             </div>
             <!-- /.col -->
-            <div class="col-xs-5">
+            <div class="col-xs-5 pull-right">
                 <?= Html::submitButton('Fazer Login', ['class' => 'btn btn-primary btn-block btn-flat', 'name' => 'login-button']) ?>
             </div>
             <!-- /.col -->
@@ -63,7 +64,6 @@ $fieldOptions2 = [
         </div> -->
         <!-- /.social-auth-links -->
 
-        <a href="#">Esqueci a minha senha</a><br>
         <!--<a href="register.html" class="text-center">Acessando o sistema pela primeira vez</a>-->
 
     </div>
